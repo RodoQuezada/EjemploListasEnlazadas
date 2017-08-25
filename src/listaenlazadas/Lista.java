@@ -20,6 +20,7 @@ public class Lista {
         if (fin == null) {
             fin = inicio;
         }
+        pintar();
     }
 
     public void ingresarFinal(int dato) {
@@ -31,10 +32,12 @@ public class Lista {
             fin.setSiguiente(nuevo);
             fin = nuevo;
         }
+        pintar();
     }
 
     public void eliminarInicio() {
         inicio = inicio.siguiente;
+        pintar();
     }
 
     public void eliminarFinal() {
@@ -48,6 +51,7 @@ public class Lista {
             fin = aux;
             fin.siguiente = null;
         }
+        pintar();
     }
 
     public void eliminarNodo(int dato) {
@@ -72,6 +76,7 @@ public class Lista {
                 }
             }
         }
+        pintar();
     }
 
     public void pintar() {
